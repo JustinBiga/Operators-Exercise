@@ -33,8 +33,26 @@
 
 
 
+            //Exercise 2
 
+            Console.WriteLine("Enter the radius of your circle");
+
+            // double radius = double.Parse(Console.ReadLine());
+            var userInput = Console.ReadLine();
+
+            var radius = double.Parse(userInput);
+
+            Console.WriteLine(AreaOfCircle(radius));
 
         }
+
+        public static double AreaOfCircle(double radius)
+
+        {
+            double area = Math.PI * Math.Pow(radius, 2);
+            return area;
+        }
+
     }
+
 }
